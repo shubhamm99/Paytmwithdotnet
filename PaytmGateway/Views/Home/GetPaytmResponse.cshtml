@@ -1,0 +1,138 @@
+﻿@model PaytmGateway.Models.PaymentResponseViewModel
+@{
+    ViewBag.Title = "GetPaytmResponse";
+}
+
+<h2>Transaction Response</h2>
+
+<div class="container">
+    <center>
+        <h2 class="text-info">
+            @ViewBag.Message
+            
+        </h2>
+        <h5 class="text-danger">
+            @ViewBag.ErrorDetail
+        </h5>
+    </center>
+    <table class="table table-bordered" width="100%">
+        <thead>
+            <tr>
+                <th>
+                    Parameter
+                </th>
+                <th>
+                    Value
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.MID)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => m.MID)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.ORDERID)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => m.ORDERID)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.TXNAMOUNT)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => m.TXNAMOUNT)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.TXNID)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => m.TXNID)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.BANKTXNID)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => m.BANKTXNID)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.STATUS)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => m.STATUS)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.RESPCODE)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => m.RESPCODE)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.RESPMSG)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => m.RESPMSG)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.TXNDATE)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => m.TXNDATE)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.GATEWAYNAME)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => m.GATEWAYNAME)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.BANKNAME)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => m.BANKNAME)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.PAYMENTMODE)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => m.PAYMENTMODE)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.CHECKSUMHASH)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => m.CHECKSUMHASH)
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
